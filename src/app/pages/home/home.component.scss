@@ -1,0 +1,65 @@
+.container-fluid {
+    height: 91vh;
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+    box-sizing: border-box;
+}
+
+.background-img-home {
+    margin: 0px !important;
+    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/online-cab-booking-4975060-4144421.png");
+    height: 100%;
+    width: 100%;
+    background-size: 40% 80%;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-color: rgba(16, 33, 58, 0.786);
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.content {
+    height: auto;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 0px !important;
+}
+
+.type-tabs {
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.type-tabs .tabs {
+    font-weight: 600;
+    flex-grow: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.type-tabs .active {
+    background-color: rgb(221, 55, 81);
+    color: white;
+}
+
+.type-tabs .tabs:first-child {
+    border-radius: 20px 0px 0px 0px;
+}
+
+.type-tabs .tabs:last-child {
+    border-radius: 0px 20px 0px 0px;
+}

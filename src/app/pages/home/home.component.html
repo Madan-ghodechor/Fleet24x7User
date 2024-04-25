@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <!-- <div class="change-tap btn" >
+        {{div.name}}
+    </div> -->
+
+    <div class="row w-100 background-img-home">
+        <div class="content">
+            <div class="type-tabs">
+                <div class="tabs text-center" *ngFor="let div of divs"
+                    (click)="toggleDiv(div.id); setActiveButton(div.id)" [class.active]="div.active">
+                    {{ div.name }}
+                </div>
+            </div>
+            <div [ngSwitch]="true" class="tabs pb-3">
+                <div *ngSwitchCase="divs[0].show">
+                    Local Rental Form
+                </div>
+                <div *ngSwitchCase="divs[1].show">
+                    Outstation  
+                </div>
+                <div *ngSwitchCase="divs[2].show">
+                    Multi City
+                </div>
+                <div *ngSwitchCase="divs[3].show">
+                    Airport Transfer
+                </div>
+                <div *ngSwitchCase="divs[4].show">
+                    Self Drive Goa
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,300 @@
+ * {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+ }
+
+ /* You can add global styles to this file, and also import other style files */
+ .shadow {
+     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px !important;
+     padding-bottom: 3px;
+ }
+
+
+ // Define SCSS variables
+ $theme-color: rgb(221, 55, 81);
+
+ // $theme-color: rgb(250, 235, 38);
+ $theCabYello: rgb(250, 235, 38);
+
+ $footerTextColor: white;
+ $footerTextShadowColor: rgb(0, 0, 0);
+
+ $footerTextHoverColor: rgb(246, 72, 98);
+ $footerTextHoverShadowColor: rgba(255, 255, 255, 0.518);
+
+
+
+
+
+
+
+
+
+ // Navigation Code 
+
+
+ .nav-container {
+     background-image: linear-gradient(-30deg, rgba(250, 236, 38, 0) 20%, rgba(250, 236, 38, 0) 40%, rgba(250, 236, 38, 0) 50%, rgba(255, 221, 0, 0) 80%);
+     box-sizing: border-box;
+     padding-left: 5%;
+     padding-right: 5%;
+ }
+
+ // Apply SCSS
+ .navbar-toggler {
+     border-color: $theme-color;
+ }
+
+ .fa-bars {
+     color: $theme-color !important;
+ }
+
+ #navbarSupportedContent {
+     justify-content: end;
+ }
+
+ .navItem {
+     height: 40px;
+     min-width: 170px;
+ }
+
+ .navItem .logo {
+     height: 100%;
+     width: 40%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     float: left;
+ }
+
+ .navItem .logo .circle {
+     height: 100%;
+     width: 70%;
+     border-radius: 50%;
+     border: 1px solid $theme-color;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .navItem i {
+     color: $theme-color;
+ }
+
+ .navItem .tab {
+     float: left;
+     height: 100%;
+     width: 60%;
+ }
+
+ .navItem .upper,
+ .navItem .lower {
+     height: 50%;
+     width: 100%;
+ }
+
+ .navItem .upper p {
+     font-size: 14px;
+     font-weight: 700;
+     color: $theme-color;
+ }
+
+ .navItem .lower p {
+     font-size: 11px;
+ }
+
+ .navItem .middle {
+     height: 100%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+ }
+
+ .navItem .middle p {
+     margin: 0px;
+     font-size: 14px;
+     font-weight: 700;
+     color: $theme-color;
+ }
+
+ // Media queries for mobile devices
+ @media screen and (max-width: 767px) {
+     .navItem {
+         margin: 3px;
+     }
+
+     .navItem .logo {
+         height: 40px;
+         width: 70px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         float: left;
+     }
+
+     .navItem .logo .circle {
+         height: 100%;
+         width: 70%;
+         border-radius: 50%;
+         border: 1px solid $theme-color;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+ }
+
+ // Media queries for medium-sized devices
+ @media screen and (min-width: 768px) and (max-width: 991px) {
+     /* Your styles for medium-sized devices go here */
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // Footer Code
+ .footer {
+     background-image: url("./assets/taxis/taxi1.jpg");
+     background-size: 60% 100%;
+     background-position: 100% 50%;
+     background-repeat: no-repeat;
+ }
+
+ .apply-background-img {
+     //  background-image: linear-gradient(170deg, rgba(70, 70, 70, 0.174) 10%, rgba(0, 0, 0, 0.429) 60%, rgba(221, 55, 81, 0.585) 100%);
+     background-color: rgba(13, 13, 49, 0.55);
+     padding: 0px !important;
+     margin: 0px !important;
+ }
+
+ .footer .footer-h1 {
+     font-weight: 700;
+     font-size: 18px;
+     color: $footerTextColor;
+ }
+
+ .footer .footer-h2 {
+     font-weight: 700;
+     font-size: 16px;
+     color: $footerTextColor;
+ }
+
+ .footer .footer-h3 {
+     font-weight: 500;
+     font-size: 16px;
+     color: $footerTextColor;
+ }
+
+ .footer .link {
+     // padding: 0px;
+     // margin: px;
+     color: $footerTextColor;
+ }
+
+ .footer .link:hover {
+     cursor: pointer;
+     color: $footerTextHoverColor;
+    //  text-shadow: 1px 1px $footerTextHoverShadowColor;
+ }
+
+ .footer ul {
+     list-style: none;
+ }
+
+ .footer .icon-box {
+     border: 2px solid $footerTextColor;
+     height: 40px;
+     width: 45px;
+     color: $footerTextColor;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     float: left;
+     margin: 4px;
+     border-radius: 4px;
+ }
+
+ .footer .icon-box:hover {
+     color: $theme-color;
+     border: 2px solid $theme-color;
+ }
+
+ .footer .imp-links {
+     display: flex;
+ }
+
+ .footer .imp-links .list-icons {
+     width: 30px;
+ }
+
+ .footer .footer-h1,
+ .footer .footer-h2,
+ .footer .footer-h3,
+ .footer .link {
+     text-shadow: 1px 1px 2px $footerTextShadowColor;
+ }
+
+ .shadow-side {
+     border-left: 1px solid rgba(255, 255, 255, 0.482);
+ }
+
+ .copyrighttext {
+     font-size: 15px;
+     color: white;
+ }
+
+ .copyfleet247 {
+     color: white;
+    //  text-shadow: 1px 1px rgba(255, 255, 255, 0.471);
+ }
+
+ .payment-partners li {
+     display: inline-block;
+     margin-left: 10px;
+ }
+
+ .payment-partners li img{
+    height: 30px;
+ }
+
+ // Media queries for mobile devices
+ @media screen and (max-width: 767px) {
+     .footer {
+         background-image: url("./assets/taxis/taxi1.jpg");
+         background-size: auto;
+         background-position: 30% 100%;
+         background-repeat: no-repeat;
+     }
+
+     .apply-background-img {
+         background-image: linear-gradient(170deg, rgba(70, 70, 70, 0.174) 10%, rgba(0, 0, 0, 0.429) 60%, rgba(221, 55, 81, 0.585) 100%);
+         padding: 0px !important;
+         margin: 0px !important;
+     }
+
+     .footer .link:hover {
+         cursor: pointer;
+        //  color: white;
+         text-shadow: none;
+     }
+
+     .footer .footer-h1,
+     .footer .footer-h2,
+     .footer .footer-h3,
+     .footer .link {
+         text-shadow: none;
+     }
+ }
